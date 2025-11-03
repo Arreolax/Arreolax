@@ -1,3 +1,4 @@
+<center>
 <h1 align="center">Hi 👋, I'm Alejandro</h1>
 <h3 align="center">A passionate fullstack developer from Mexico</h3>
 
@@ -22,3 +23,4 @@
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
 https://rahuldkjain.github.io/gh-profile-readme-generator
+</center>
