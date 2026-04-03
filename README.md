@@ -62,7 +62,7 @@
 <img src="https://raw.githubusercontent.com/Arreolax/Arreolax/output/snake.svg" alt="Snake animation" />
 
 ###
-
+<!--
 ###
 
 <picture>
@@ -72,3 +72,4 @@
 </picture>
 
 ###
+-->
