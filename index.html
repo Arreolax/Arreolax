@@ -1,12 +1,307 @@
-<!DOCTYPE html>
-<html lang='en'>
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Arreolax Page</title>
-    <link rel='stylesheet' href='main.css'>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio | Arreolax</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch -->
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="src/images/favicon_ps.png" />
 </head>
-<body>
-    <h1>Test Text</h1>
+
+<body
+    class="min-h-screen bg-gradient-to-b from-[#1d004f] via-[#120033] to-[#09001a] text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-white bg-fixed">
+
+    <header style="background-image: url('./src/images/header.jpg')"
+        class="fixed top-0 w-full bg-repeat-x bg-[length:192px_64px] [image-rendering:pixelated] z-50 border-b border-slate-800 bg-slate-950/60 bg-blend-multiply">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between animar-al-scroll"
+            data-animacion="animate__headShake">
+            <div class="flex items-center gap-2.5">
+                <a href="https://namemc.com/profile/Arreolax.1" target="_blank" rel="noopener noreferrer"
+                    class="hover:scale-105 transition-transform" title="Ver perfil en NameMC">
+                    <img src="./src/images/mc_arreolax.png" alt="Minecraft Skin Arreolax"
+                        class="h-8 w-auto [image-rendering:pixelated]" />
+                </a>
+
+                <a href=""
+                    class="font-mono text-lg font-bold text-sky-300 drop-shadow-[0_2px_3px_rgba(0,0,0,0.9)] hover:text-sky-200 transition-colors">
+                    &lt;Arreolax /&gt;
+                </a>
+            </div>
+
+            <nav class="hidden md:flex gap-8 text-sm font-semibold text-white drop-shadow-[0_2px_3px_rgba(0,0,0,0.9)]">
+                <a href="#sobre-mi" class="hover:text-sky-300 transition-colors">Sobre mí</a>
+                <a href="#tecnologias" class="hover:text-sky-300 transition-colors">Tecnologías</a>
+                <a href="#proyectos" class="hover:text-sky-300 transition-colors">Proyectos</a>
+                <a href="#contacto" class="hover:text-sky-300 transition-colors">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-24 max-w-6xl mx-auto px-6 space-y-24 pb-20">
+        <section id="sobre-mi" class="py-12 flex flex-col items-start gap-6 animar-al-scroll"
+            data-animacion="animate__pulse">
+            <div class="space-x-3">
+
+                <span
+                    class="text-sky-400 font-mono text-sm px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-full">
+                    Desarrollador de Software
+                </span>
+                <span
+                    class="text-yellow-400 font-mono text-sm px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-full">
+                    Desarrollador Web
+                </span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                Desarrollando aplicaciones web <br class="hidden md:inline" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-sky-600">
+                    eficientes y escalables.
+                </span>
+            </h1>
+            <p class="text-slate-400 max-w-2xl text-lg leading-relaxed">
+                Estudiante de Ingeniería de Software enfocado en el desarrollo
+                full-stack. Interesado en diseñar arquitecturas limpias,
+                optimizar bases de datos y construir soluciones digitales funcionales.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="#proyectos"
+                    class="bg-purple-600 hover:bg-purple-500 text-white font-semibold px-6 py-3 rounded-lg transition-all shadow-lg shadow-sky-500/20">
+                    Ver Proyectos
+                </a>
+                <a href="https://github.com/arreolax" target="_blank" rel="noopener noreferrer"
+                    class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3 rounded-lg border border-slate-700 transition-all">
+                    <i class="fa-brands fa-github text-xl pr-1"></i>
+                    GitHub
+                </a>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="space-y-6">
+            <h2 class="text-2xl font-bold text-white flex items-center gap-3 animar-al-scroll"
+                data-animacion="animate__pulse">
+                Tecnologías
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 animar-al-scroll"
+                data-animacion="animate__pulse">
+                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                    <i class="fa-brands fa-visual-studio"></i>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm">
+                            Visual Studio Code
+                        </h3>
+                        <p class="text-xs text-slate-400">Editor de Codigo</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                    <i class="fa-brands fa-node"></i>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm">
+                            Node.js / Express
+                        </h3>
+                        <p class="text-xs text-slate-400">Backend APIs</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                    <i class="fa-brands fa-angular"></i>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm">
+                            Next.js / Angular
+                        </h3>
+                        <p class="text-xs text-slate-400">Frontend Web</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm">Ionic</h3>
+                        <p class="text-xs text-slate-400">Desarrollo Móvil</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                    <i class="fa-solid fa-server"></i>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm">
+                            PostgreSQL / Supabase
+                        </h3>
+                        <p class="text-xs text-slate-400">Bases de datos</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                    <i class="fa-solid fa-italic"></i>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm">Tailwind CSS</h3>
+                        <p class="text-xs text-slate-400">Estilos y UI</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                    <i class="fa-solid fa-database"></i>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm">MySQL / XAMPP</h3>
+                        <p class="text-xs text-slate-400">Bases de datos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6 pt-5 animar-al-scroll" data-animacion="animate__pulse">
+                <h2 class="text-xl font-bold text-white flex items-center gap-3 italic">
+                    Futuras Tecnologías
+                </h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                        <i class="fa-brands fa-node"></i>
+                        <div>
+                            <h3 class="font-semibold text-white text-sm">
+                                Node.js / Express
+                            </h3>
+                            <p class="text-xs text-slate-400">Backend APIs</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                        <i class="fa-brands fa-angular"></i>
+                        <div>
+                            <h3 class="font-semibold text-white text-sm">
+                                Next.js / Angular
+                            </h3>
+                            <p class="text-xs text-slate-400">Frontend Web</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <div>
+                            <h3 class="font-semibold text-white text-sm">Ionic</h3>
+                            <p class="text-xs text-slate-400">Desarrollo Móvil</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="space-y-8 animar-al-scroll" data-animacion="animate__pulse">
+            <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+                Proyectos Destacados
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Tarjeta de Proyecto 1 -->
+                <article
+                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-bold text-white">
+                                Sistema de Helpdesk e IT Support
+                            </h3>
+                            <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded-md">Next.js /
+                                Supabase</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Plataforma centralizada para gestión de tickets técnicos con
+                            control de roles, base de conocimientos y arquitectura RAG para
+                            asistencia inteligente.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50">
+                        <div class="flex gap-2 text-xs text-slate-400 font-mono">
+                            <span>Next.js</span> • <span>PostgreSQL</span> •
+                            <span>Tailwind</span>
+                        </div>
+                        <a href="https://github.com/arreolax/proyecto-1" target="_blank"
+                            class="text-sm font-semibold text-sky-400 hover:underline">Código &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta de Proyecto 2 -->
+                <article
+                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-bold text-white">
+                                Automated Database Backup Tool
+                            </h3>
+                            <span
+                                class="text-xs font-mono text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md">Node.js
+                                / Express</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Script y API REST en Node.js que ejecuta copias de seguridad
+                            automatizadas de bases de datos MySQL y respalda los archivos
+                            .sql en Google Drive.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50">
+                        <div class="flex gap-2 text-xs text-slate-400 font-mono">
+                            <span>Node.js</span> • <span>MySQL</span> •
+                            <span>Google Drive API</span>
+                        </div>
+                        <a href="https://github.com/arreolax/proyecto-2" target="_blank"
+                            class="text-sm font-semibold text-sky-400 hover:underline">Código &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto"
+            class="bg-slate-800/30 rounded-2xl p-8 border border-slate-700/50 text-center space-y-4 animar-al-scroll"
+            data-animacion="animate__pulse">
+            <h2 class="text-2xl font-bold text-white">
+                ¿Tienes un proyecto o vacante en mente?
+            </h2>
+            <p class="text-slate-400 max-w-xl mx-auto text-sm">
+                Estoy disponible para oportunidades de desarrollo de software
+                full-stack, colaboraciones o proyectos.
+            </p>
+
+            <div class="pt-2 flex flex-wrap justify-center gap-2">
+                <a href="mailto:arreolaxii@hotmail.com" title="Correo" aria-label="Correo"
+                    class="inline-flex items-center justify-center w-12 h-12 bg-sky-500 hover:bg-sky-600 text-white rounded-lg transition-all hover:-translate-y-0.5 shadow-lg shadow-sky-500/20">
+                    <i class="fa-solid fa-envelope text-xl"></i>
+                </a>
+
+                <a href="https://www.instagram.com/aarreolax" target="_blank" title="Instagram" aria-label="Instagram"
+                    class="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 hover:opacity-90 text-white rounded-lg transition-all hover:-translate-y-0.5 shadow-lg shadow-rose-500/20">
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                </a>
+
+                <a href="https://www.facebook.com/arreolax" target="_blank" title="Facebook" aria-label="Facebook"
+                    class="inline-flex items-center justify-center w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all hover:-translate-y-0.5 shadow-lg shadow-blue-600/20">
+                    <i class="fa-brands fa-facebook-f text-xl"></i>
+                </a>
+
+                <a href="https://www.X.com/aarreolax" target="_blank" title="X" aria-label="X"
+                    class="inline-flex items-center justify-center w-12 h-12 bg-neutral-900 hover:bg-black text-white rounded-lg transition-all hover:-translate-y-0.5 shadow-lg shadow-neutral-900/20">
+                    <i class="fa-brands fa-x-twitter text-xl"></i>
+                </a>
+
+                <a href="https://discord.com/users/757983403315560620" target="_blank" title="Discord" aria-label="Discord"
+                    class="inline-flex items-center justify-center w-12 h-12 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-all hover:-translate-y-0.5 shadow-lg shadow-indigo-600/20">
+                    <i class="fa-brands fa-discord text-xl"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/arreolax/" target="_blank" title="LinkedIn" aria-label="LinkedIn"
+                    class="inline-flex items-center justify-center w-12 h-12 bg-sky-700 hover:bg-sky-800 text-white rounded-lg transition-all hover:-translate-y-0.5 shadow-lg shadow-sky-700/20">
+                    <i class="fa-brands fa-linkedin-in text-xl"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-800 text-center py-6 text-xs text-slate-500">
+        <p class="animar-al-scroll" data-animacion="animate__bounce">
+            © 2026 Arreolax.
+        </p>
+    </footer>
+    <script src="script.js"> </script>
 </body>
+
 </html>

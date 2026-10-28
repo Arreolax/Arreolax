@@ -1,0 +1,7 @@
+.animar-al-scroll {
+  opacity: 0;
+}
+
+.animar-al-scroll.animate__animated {
+  opacity: 1;
+}

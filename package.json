@@ -1,0 +1,25 @@
+{
+  "name": "arreolax",
+  "version": "1.0.0",
+  "description": "<h2 align=\"left\">Hi 👋! My name is Alejandro and I'm a FullStack Developer from México</h2>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arreolax/Arreolax.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Arreolax/Arreolax/issues"
+  },
+  "homepage": "https://github.com/Arreolax/Arreolax#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
