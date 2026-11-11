@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // animaciones
     const elementos = document.querySelectorAll('.animar-al-scroll');
 
     const observador = new IntersectionObserver((entradas, observador) => {
@@ -17,4 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     elementos.forEach(el => observador.observe(el));
+
+    // favicon random
+    const favicons = [
+    "src/images/favicon_ps.png",
+    "src/images/favicon_n.png",
+    "src/images/favicon_sp.png",
+    "src/images/favicon_lr.png"
+  ];
+
+  const randomIndex = Math.floor(Math.random() * favicons.length);
+  
+  document.getElementById("favicon").href = favicons[randomIndex];
 });

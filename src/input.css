@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-borde_p: borde-color 1.5s ease-in-out infinite;
+
+  --animate-borde_dev: borde-color-dev 1.5s ease-in-out infinite;
+
+  @keyframes borde-color {
+    0%, 100% { border-color: rgba(51, 65, 85, 0.6); }
+    50% { border-color: rgba(56, 189, 248, 0.9); }
+  }
+
+  @keyframes borde-color-dev {
+    0%, 100% { border-color: rgba(51, 65, 85, 0.6); }
+    50% { border-color: rgba(250, 204, 21, 1); }
+  }
+}

@@ -3,7 +3,7 @@
 
 <head>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Alejandro Portfolio">
+    <meta property="og:title" content="Arreolax Portafolio">
     <meta property="og:description" content="Portafolio de Trabajo de Arreolax">
     <meta property="og:image" content="https://arreolax.github.io/Arreolax/src/images/og.jpg">
     <meta property="og:url" content="https://arreolax.github.io/Arreolax/">
@@ -14,11 +14,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio | Arreolax</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <!-- iconos -->
     <!-- npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch -->
     <link href="./dist/output.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="src/images/favicon_ps.png" />
+    <link id="favicon" rel="icon" type="image/png" href="src/images/favicon_ps.png" />
 </head>
 
 <body
@@ -50,11 +52,10 @@
         </div>
     </header>
 
-    <main class="pt-24 max-w-6xl mx-auto px-6 space-y-24 pb-20">
+    <main class="pt-24 max-w-6xl mx-auto px-6 space-y-14 pb-20">
         <section id="sobre-mi" class="py-12 flex flex-col items-start gap-6 animar-al-scroll"
             data-animacion="animate__pulse">
-            <div class="space-x-3">
-
+            <div class="flex flex-wrap gap-3">
                 <span
                     class="text-sky-400 font-mono text-sm px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-full">
                     Desarrollador de Software BIS
@@ -144,7 +145,15 @@
                 </div>
 
                 <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
-                    <i class="fa-solid fa-server"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm">React</h3>
+                        <p class="text-xs text-slate-400">Frontend Web</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                    <i class="fa-brands fa-postgresql"></i>
                     <div>
                         <h3 class="font-semibold text-white text-sm">
                             PostgreSQL / Supabase
@@ -154,10 +163,20 @@
                 </div>
 
                 <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
-                    <i class="fa-solid fa-italic"></i>
+                    <i class="fa-brands fa-tailwind-css"></i>
                     <div>
                         <h3 class="font-semibold text-white text-sm">Tailwind CSS</h3>
                         <p class="text-xs text-slate-400">Estilos y UI</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                    <i class="fa-brands fa-php"></i>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm">
+                            PHP
+                        </h3>
+                        <p class="text-xs text-slate-400">Backend APIs</p>
                     </div>
                 </div>
 
@@ -192,6 +211,16 @@
                             <p class="text-xs text-slate-400">Roblox Studio</p>
                         </div>
                     </div>
+
+                    <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                        <i class="fa-solid fa-cube"></i>
+                        <div>
+                            <h3 class="font-semibold text-white text-sm">
+                                Java
+                            </h3>
+                            <p class="text-xs text-slate-400">Minecraft</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
@@ -204,130 +233,462 @@
 
             <div class="grid md:grid-cols-2 gap-6">
 
+                <!-- RID -->
                 <article
-                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
+                    class="animate-borde_p bg-slate-800/40 rounded-2xl p-6 border-2 hover:border-sky-500/50 flex flex-col justify-between space-y-4">
                     <div class="space-y-3">
-                        <div class="flex justify-between items-start">
+                        <div class="flex justify-between items-start gap-4">
                             <h3 class="text-xl font-bold text-white">
-                                Punto de Venta - Ruedas Industriales Durango
+                                Punto de Venta RID
                             </h3>
-                            <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
-                                Trabajo en Equipo
-                            </span>
+
+                            <div class="flex flex-col items-end gap-1.5 shrink-0">
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-pink-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
+                                    Desarrollo en Equipo
+                                </span>
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-green-300 bg-slate-700/50 px-2.5 py-0.5 rounded-md">
+                                    ... 2026
+                                </span>
+                            </div>
                         </div>
+
+                        <div class="flex items-center gap-2 text-xs font-medium">
+                            <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                            <span class="text-blue-400">En Producción</span>
+                        </div>
+
                         <p class="text-slate-400 text-sm leading-relaxed">
-                            Sistema integral de punto de venta, orientado a la gestión eficiente de productos, ventas, clientes y facturas (local).
+                            Sistema integral de punto de venta para la gestión de productos, ventas en tiempo real,
+                            clientes y facturación electrónica mediante API (Facturama).
                         </p>
                     </div>
-                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50">
-                        <div class="flex gap-2 text-xs text-slate-400 font-mono">
-                            <span>Node.js</span> • <span>MySQL</span> •
+
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50 gap-4">
+                        <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-mono">
+                            <span>Node.js</span>
+                            <span>•</span>
+                            <span>Express</span>
+                            <span>•</span>
+                            <span>MySQL</span>
+                            <span>•</span>
                             <span>Tailwind</span>
+                            <span>•</span>
+                            <span>Facturama</span>
                         </div>
-                        <a href="https://github.com/arreolax/Punto_Venta" target="_blank"
-                            class="text-sm font-semibold text-sky-400 hover:underline">Código (Ejemplo) &rarr;</a>
+                        <a href="https://github.com/arreolax/Punto_Venta" target="_blank" rel="noopener noreferrer"
+                            class="text-sm font-semibold text-sky-400 hover:underline shrink-0">
+                            Repositorio (Base) &rarr;
+                        </a>
                     </div>
                 </article>
 
+                <!-- SOPHIA -->
                 <article
-                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
+                    class="animate-borde_dev bg-slate-800/40 rounded-2xl p-6 border-2 hover:border-sky-500/50 flex flex-col justify-between space-y-4">
                     <div class="space-y-3">
-                        <div class="flex justify-between items-start">
-                            <h3 class="text-xl font-bold text-white">
-                                Punto de Venta Dulceria
-                            </h3>
-                            <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
-                                Trabajo Individual
-                            </span>
-                        </div>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            ...
-                        </p>
-                    </div>
-                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50">
-                        <div class="flex gap-2 text-xs text-slate-400 font-mono">
-                            <span>JavaScript</span> • <span>MySQL</span> •
-                            <span>PHP</span>
-                        </div>
-                        <a href="https://github.com/arreolax/Dulceria_POS" target="_blank"
-                            class="text-sm font-semibold text-sky-400 hover:underline">Código &rarr;</a>
-                    </div>
-                </article>
-
-                <article
-                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
-                    <div class="space-y-3">
-                        <div class="flex justify-between items-start">
-                            <h3 class="text-xl font-bold text-white">
-                                ChatBot Whatsapp
-                            </h3>
-                            <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
-                                Trabajo Individual
-                            </span>
-                        </div>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            ...
-                        </p>
-                    </div>
-                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50">
-                        <div class="flex gap-2 text-xs text-slate-400 font-mono">
-                            <span>Node.js</span> • <span>MySQL</span> •
-                            <span>PHP</span>
-                        </div>
-                        <a href="https://github.com/arreolax/Chatbot" target="_blank"
-                            class="text-sm font-semibold text-sky-400 hover:underline">Código &rarr;</a>
-                    </div>
-                </article>
-
-                <article
-                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
-                    <div class="space-y-3">
-                        <div class="flex justify-between items-start">
-                            <h3 class="text-xl font-bold text-white">
-                                Modulo de Administrador - Tokyo Sushi
-                            </h3>
-                            <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
-                                Trabajo en Equipo
-                            </span>
-                        </div>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            Sistema Web para la administracion de personal, productos, areas, sedes y pagos. <span class="italic pl-3">(Practicas Profesionales I)</span>
-                        </p>
-                    </div>
-                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50">
-                        <div class="flex gap-2 text-xs text-slate-400 font-mono">
-                            <span>JavaScript</span> • <span>MySQL</span> •
-                            <span>PHP</span>
-                        </div>
-                        <a
-                            class="text-sm font-semibold text-orange-400 ">Código No Disponible</a>
-                    </div>
-                </article>
-
-                <article
-                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
-                    <div class="space-y-3">
-                        <div class="flex justify-between items-start">
+                        <div class="flex justify-between items-start gap-4">
                             <h3 class="text-xl font-bold text-white">
                                 SOPHIA WEB
                             </h3>
-                            <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
-                                Trabajo en Equipo
-                            </span>
+                            <div class="flex flex-col items-end gap-3 shrink-0">
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-pink-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
+                                    Desarrollo en Equipo
+                                </span>
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-green-300 bg-slate-700/50 px-2.5 py-0.5 rounded-md">
+                                    2026
+                                </span>
+                            </div>
                         </div>
+
+                        <div class="flex items-center gap-2 text-xs font-medium">
+
+                            <span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+                            <span class="text-yellow-400">En desarrollo</span>
+                        </div>
+
                         <p class="text-slate-400 text-sm leading-relaxed">
                             ...
                         </p>
                     </div>
+
                     <div class="flex items-center justify-between pt-4 border-t border-slate-700/50">
-                        <div class="flex gap-2 text-xs text-slate-400 font-mono">
-                            <span>Next.js</span> • <span>Supabase</span> •
-                            <span>IA</span>
+                        <div class="flex items-center gap-2 text-xs text-slate-400 font-mono">
                         </div>
-                        <a href="https://github.com/arreolax/SOPHIA_WEB" target="_blank"
-                            class="text-sm font-semibold text-sky-400 hover:underline">Código &rarr;</a>
+                        <a href="https://github.com/arreolax/SOPHIA-WEB" target="_blank" rel="noopener noreferrer"
+                            class="text-sm font-semibold text-sky-400/50 pointer-events-none shrink-0">
+                            Repositorio &rarr;
+                        </a>
                     </div>
                 </article>
+
+                <!-- Clend App -->
+                <article
+                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start gap-4">
+                            <h3 class="text-xl font-bold text-white">
+                                Clend App
+                            </h3>
+
+                            <div class="flex flex-col items-end gap-1.5 shrink-0">
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-pink-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
+                                    Desarrollo en Equipo
+                                </span>
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-slate-300 bg-slate-700/50 px-2.5 py-0.5 rounded-md">
+                                    Agosto 2026
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 text-xs font-medium">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <span class="text-emerald-400">Completado</span>
+                        </div>
+
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Aplicación móvil para Android de productividad, enfoque y gamificación. Combina gestión de
+                            tareas con
+                            notificaciones, libreta de notas, modo estudio anti-distracciones con música ambiental,
+                            sistema de rachas,
+                            rangos competitivos y minijuego matemático.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50 gap-4">
+                        <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-mono">
+                            <span>Kotlin</span>
+                            <span>•</span>
+                            <span>Android</span>
+                            <span>•</span>
+                            <span>Room DB</span>
+                        </div>
+                        <a href="https://github.com/arreolax/ClendApp" target="_blank" rel="noopener noreferrer"
+                            class="text-sm font-semibold text-sky-400 hover:underline shrink-0">
+                            Repositorio &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Dulceria POS-->
+                <article
+                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start gap-4">
+                            <h3 class="text-xl font-bold text-white">
+                                Dulcería POS
+                            </h3>
+
+                            <div class="flex flex-col items-end gap-1.5 shrink-0">
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-purple-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
+                                    Desarrollo Individual
+                                </span>
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-slate-300 bg-slate-700/50 px-2.5 py-0.5 rounded-md">
+                                    Abril 2026
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 text-xs font-medium">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <span class="text-emerald-400">Completado</span>
+                        </div>
+
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Sistema web integral de Punto de Venta, control de inventario y facturación electrónica con
+                            Facturama. Incluye arquitectura REST, cancelación transaccional mediante procedimientos
+                            almacenados.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50 gap-4">
+                        <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-mono">
+                            <span>PHP 8</span>
+                            <span>•</span>
+                            <span>MySQL</span>
+                            <span>•</span>
+                            <span>JS / jQuery</span>
+                            <span>•</span>
+                            <span>Facturama</span>
+                        </div>
+                        <a href="https://github.com/arreolax/Dulceria_POS" target="_blank" rel="noopener noreferrer"
+                            class="text-sm font-semibold text-sky-400 hover:underline shrink-0">
+                            Repositorio &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Tokyo S-->
+                <article
+                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start gap-4">
+                            <h3 class="text-xl font-bold text-white">
+                                Sistema Punto de Venta Tokio Sushi
+                            </h3>
+
+                            <div class="flex flex-col items-end gap-1.5 shrink-0">
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-yellow-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
+                                    Practicas Profesionales I
+                                </span>
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-slate-300 bg-slate-700/50 px-2.5 py-0.5 rounded-md">
+                                    Marzo 2026
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 text-xs font-medium">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <span class="text-emerald-400">Completado</span>
+                        </div>
+
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Sistema de punto de venta para restaurantes (mesas y reparto) con gestión de inventario de
+                            insumos por recetas, cocina, cortes de caja, reportes y auditoría. Implementa lógica
+                            delegada en MySQL
+                            mediante procedimientos almacenados, vistas y logs de acción.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50 gap-4">
+                        <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-mono">
+                            <span>HTML5</span>
+                            <span>•</span>
+                            <span>JS Vanilla</span>
+                            <span>•</span>
+                            <span>PHP</span>
+                            <span>•</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a class="text-sm font-semibold text-orange-400 ">
+                            Código No Disponible
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Chatbot WA-->
+                <article
+                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start gap-4">
+                            <h3 class="text-xl font-bold text-white">
+                                WhatsApp E-Commerce Chatbot
+                            </h3>
+
+                            <div class="flex flex-col items-end gap-1.5 shrink-0">
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-purple-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
+                                    Desarrollo Individual
+                                </span>
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-slate-300 bg-slate-700/50 px-2.5 py-0.5 rounded-md">
+                                    Agosto 2025
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 text-xs font-medium">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <span class="text-emerald-400">Completado</span>
+                        </div>
+
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Bot de comercio electrónico automatizado para WhatsApp utilizando WhatsApp Cloud API.
+                            Permite explorar
+                            catálogos con imágenes, gestionar carrito de compras, registrar usuarios, procesar métodos
+                            de pago y enviar
+                            automáticamente comprobantes en PDF.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50 gap-4">
+                        <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-mono">
+                            <span>Node.js</span>
+                            <span>•</span>
+                            <span>Meta API</span>
+                            <span>•</span>
+                            <span>PHP</span>
+                            <span>•</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="https://github.com/arreolax/Chatbot" target="_blank" rel="noopener noreferrer"
+                            class="text-sm font-semibold text-sky-400 hover:underline shrink-0">
+                            Repositorio &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Jeoparty -->
+                <article
+                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start gap-4">
+                            <h3 class="text-xl font-bold text-white">
+                                Jeopardy Básico
+                            </h3>
+
+                            <div class="flex flex-col items-end gap-1.5 shrink-0">
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-pink-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
+                                    Desarrollo en Equipo
+                                </span>
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-slate-300 bg-slate-700/50 px-2.5 py-0.5 rounded-md">
+                                    Septiembre 2024
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 text-xs font-medium">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <span class="text-emerald-400">Completado</span>
+                        </div>
+
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Juego de trivia estilo Jeopardy desarrollado en Java (NetBeans) para dos equipos. Cuenta con
+                            4 categorías,
+                            gestión automática de puntuaciones, efectos de sonido y un editor integrado para añadir,
+                            modificar o eliminar
+                            preguntas personalizadas.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50 gap-4">
+                        <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-mono">
+                            <span>Java 8</span>
+                            <span>•</span>
+                            <span>Swing</span>
+                            <span>•</span>
+                            <span>NetBeans</span>
+                            <span>•</span>
+                            <span>Ant</span>
+                        </div>
+                        <a href="https://github.com/arreolax/Basic-Jeopardy-Game-in-Netbeans-8.2" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-sm font-semibold text-sky-400 hover:underline shrink-0">
+                            Repositorio &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Caballero y Mago -->
+                <article
+                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start gap-4">
+                            <h3 class="text-xl font-bold text-white">
+                                Juego Básico (Caballero y Mago)
+                            </h3>
+
+                            <div class="flex flex-col items-end gap-1.5 shrink-0">
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-purple-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
+                                    Desarrollo Individual
+                                </span>
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-slate-300 bg-slate-700/50 px-2.5 py-0.5 rounded-md">
+                                    Julio 2024
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 text-xs font-medium">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <span class="text-emerald-400">Completado</span>
+                        </div>
+
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Juego por turnos desarrollado en Java (NetBeans) donde se enfrentan un Caballero y un Mago
+                            con atributos de
+                            ataque, defensa y vida. Implementa habilidades especiales, cálculo de daño aleatorio e
+                            interfaz gráfica.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50 gap-4">
+                        <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-mono">
+                            <span>Java</span>
+                            <span>•</span>
+                            <span>NetBeans</span>
+                            <span>•</span>
+                            <span>POO</span>
+                            <span>•</span>
+                            <span>GUI</span>
+                        </div>
+                        <a href="https://github.com/arreolax/Basic-Game-in-Netbeans-8.2" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-sm font-semibold text-sky-400 hover:underline shrink-0">
+                            Repositorio &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card de ejemplo -->
+                <!-- 
+                <article
+                    class="bg-slate-800/40 rounded-2xl p-6 border border-slate-700/60 hover:border-sky-500/50 transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start gap-4">
+                            <h3 class="text-xl font-bold text-white">
+                                Punto de Venta - Ruedas Industriales Durango
+                            </h3>
+                            <div class="flex flex-col items-end gap-3 shrink-0">
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-pink-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
+                                    Desarrollo en Equipo
+                                </span>
+                                <span
+                                    class="shrink-0 whitespace-nowrap text-xs font-mono text-purple-400 bg-sky-500/10 px-2.5 py-1 rounded-md">
+                                    Desarrollo Individual
+                                </span>
+                                <span
+                                    class="whitespace-nowrap text-xs font-mono text-slate-300 bg-slate-700/50 px-2.5 py-0.5 rounded-md">
+                                    2026
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 text-xs font-medium">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                            <span class="text-emerald-400">Completado</span>
+
+                            <span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+                            <span class="text-yellow-400">En desarrollo</span>
+
+                            <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                            <span class="text-blue-400">En Producción</span>
+                        </div>
+
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Sistema integral de punto de venta, orientado a la gestión eficiente de productos, ventas,
+                            clientes y facturas (local).
+                        </p>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-700/50">
+                        <div class="flex items-center gap-2 text-xs text-slate-400 font-mono">
+                            <span>Node.js</span>
+                            <span>•</span>
+                            <span>MySQL</span>
+                            <span>•</span>
+                            <span>Tailwind</span>
+                        </div>
+                        <a href="https://github.com/arreolax/Punto_Venta" target="_blank" rel="noopener noreferrer"
+                            class="text-sm font-semibold text-sky-400 hover:underline shrink-0">
+                            Repositorio &rarr;
+                        </a>
+                    </div>
+                </article>
+                -->
 
             </div>
         </section>
@@ -383,6 +744,7 @@
             © 2026 Arreolax.
         </p>
     </footer>
+
     <script src="script.js"> </script>
 </body>
 
